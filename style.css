@@ -1,0 +1,72 @@
+:root {
+    --main-text-color: rgba(51, 51, 51, 1);
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+header {
+    background-color: rgba(254, 209, 0, 1);
+    padding: 40px 0;
+}
+header ul {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    column-gap: 50px;
+}
+header li, .phone {
+    align-self: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
+.phone {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: underline;
+}
+.burger_menu {
+    display: none;
+    align-self: center;
+}
+
+@media screen and (max-width: 1439px) {
+    header {
+        padding: 20px 30px;
+    }
+    .phone, header nav ul {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+        width: 46px;
+        height: 28px;
+    }
+    .logo {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 28px 30px;
+    }
+    .burger_menu {
+        width: 32px;
+        height: 19px;
+    }
+    .logo {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
