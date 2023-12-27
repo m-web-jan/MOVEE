@@ -38,6 +38,212 @@ header nav {
     display: none;
     align-self: center;
 }
+main {
+    background-color: rgba(254, 209, 0, 1);
+}
+main>div>img {
+    margin-top: -80px;
+}
+.title {
+    color: var(--main-text-color);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 74px;
+    margin-top: 64px;
+}
+.subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 28px 0 50px 0;
+}
+.main_btn {
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+}
+.button {
+    width: 300px;
+    background-color: rgba(255, 53, 43, 1);
+    text-align: center;
+    padding: 15px 0;
+    color: rgba(242, 242, 242, 1);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: -70px;
+}
+.border {
+    border: 3px solid white;
+    width: 300px;
+    height: 60px;
+    margin-left: 4px;
+    z-index: 1;
+}
+main .container {
+    display: flex;
+}
+.advantages {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    width: 547px;
+}
+.advantages div {
+    display: flex;
+    column-gap: 10px;
+}
+main .content>img {
+    display: none;
+}
+.process h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 60px;
+}
+.process .container {
+    padding: 0 100px;
+}
+.number {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 61px;
+    text-shadow: 2px 0px #FED100;
+}
+.stages {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+.stage {
+    display: flex;
+    column-gap: 30px;
+}
+.stage_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+.stage_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 16px;
+}
+.stage_content {
+    width: 400px;
+}
+.stage:nth-child(2) {
+    margin-bottom: 48px;
+}
+.stage>img {
+    display: none;
+}
+.price_list {
+    padding-bottom: 100px;
+}
+.price_title {
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+.price_subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.list {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.tariff {
+    width: 420px;
+    border: 1px solid rgba(235, 235, 235, 1);
+    padding: 75px 0;
+}
+.middle {
+    border: 1px solid rgba(254, 209, 0, 1);
+}
+.tariff_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+.tariff ul {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.tariff li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+.tariff_price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 50px;
+}
+.tariff button {
+    background-color: rgba(254, 209, 0, 1);
+    padding: 15px 75px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+.all_price {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 130px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(51, 51, 51, 1);
+    display: none;
+}
+.cars_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.cars_subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+.cars ul {
+    margin-top: 60px;
+    margin-bottom: 46px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+.active {
+    border: 1px solid rgba(254, 209, 0, 1) !important;
+}
+.cars li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 13px 50px;
+    border: 1px solid rgba(235, 235, 235, 1);
+}
 
 @media screen and (max-width: 1439px) {
     header {
@@ -55,6 +261,108 @@ header nav {
         font-size: 36px;
         line-height: 43px;
     }
+    main .container {
+        display: block;
+        text-align: center;
+    }
+    main .container>img {
+        display: none;
+    }
+    .title {
+        font-size: 56px;
+        width: 570px;
+        margin: 0 auto;
+    }
+    .subtitle {
+        margin: 4px 0 0 0;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    main .content>img {
+        margin: -40px -60px 0 0;
+        display: inline;
+    }
+    .advantages {
+        margin: 44px auto 0 auto;
+        padding-bottom: 50px;
+        text-align: left;
+    }
+    .main_btn {
+        margin: 0 auto;
+    }
+    .border, .main_btn, .button {
+        width: 383px;
+    }
+    .button {
+        font-size: 30px;
+        position: absolute;
+        z-index: 1;
+    }
+    .number {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .stage_title {
+        font-size: 24px;
+        line-height: 30px;
+        content: '123';
+    }
+    .stage_content {
+        width: 460px;
+    }
+    .stage {
+        margin-bottom: 24px;
+        justify-content: space-between;
+        width: 600px;
+        column-gap: 0;
+    }
+    .stages {
+        padding-bottom: 200px;
+        margin: 0 auto;
+        width: 600px;
+    }
+    .process .container {
+        padding: 0 90px;
+    }
+    .all_price {
+        display: block;
+    }
+    .tariff:not(.middle) {
+        display: none;
+    }
+    .middle {
+        border: none;
+        margin: 0 auto;
+    }
+    .tariff {
+        padding: 0;
+    }
+    .price_title {
+        padding-bottom: 12px;
+    }
+    .price_subtitle {
+        margin-bottom: 45px;
+    }
+    .tariff_title {
+        font-weight: 500;
+    }
+    .tariff ul {
+        padding: 30px 50px;
+    }
+    .tariff li {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .tariff_price {
+        padding-bottom: 16px;
+    }
+    .tariff button {
+        background-color: rgba(254, 209, 0, 1);
+        padding: 20px 115px;
+
+        font-size: 28px;
+        line-height: 34px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -68,5 +376,113 @@ header nav {
     .logo {
         font-size: 16px;
         line-height: 20px;
+    }
+    .advantages {
+        display: none;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 37px;
+        width: 190px;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    main .content>img {
+        width: 248px;
+        height: 396px;
+    }
+    .border {
+        display: none;
+    }
+    .button {
+        margin-top: -5px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .main_btn {
+        padding-bottom: 30px;
+    }
+    main .content>img {
+        margin: -35px -60px 0 0;
+        display: inline;
+    }
+    .border, .main_btn, .button {
+        width: 292px;
+    }
+    .process h2 {
+        font-size: 20px;
+        line-height: 25px;
+        padding-top: 65px;
+        padding-bottom: 28px;
+    }
+    .stage:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .number {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .stage_content {
+        width: 175px;
+    }
+    .stage_title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .stage_text {
+        display: none;
+    }
+    .stage {
+        margin-bottom: 20px;
+        width: 280px;
+    }
+    .stages {
+        padding-bottom: 80px;
+        width: 280px;
+    }
+    .stage>img {
+        display: block;
+    }
+    .process .container {
+        margin: 0 20px;
+    }
+    .price_title {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 12px;
+    }
+    .price_subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .price_subtitle {
+        margin-bottom: 20px;
+    }
+    .tariff_title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .tariff ul {
+        padding: 25px 45px;
+        row-gap: 15px;
+    }
+    .tariff_price {
+        padding-bottom: 50px;
+    }
+    .tariff button {
+        padding: 17px 100px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .all_price {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 21px;
+        width: 85px;
+    }
+    .price_list {
+        padding-bottom: 30px;
     }
 }
