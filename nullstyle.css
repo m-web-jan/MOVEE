@@ -13,3 +13,6 @@ a {
 button {
   border: none;
 }
+img {
+  overflow: hidden;
+}

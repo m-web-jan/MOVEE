@@ -214,6 +214,9 @@ main .content>img {
     border-bottom: 1px solid rgba(51, 51, 51, 1);
     display: none;
 }
+.cars {
+    padding-bottom: 50px;
+}
 .cars_title {
     font-weight: 600;
     font-size: 30px;
@@ -237,12 +240,58 @@ main .content>img {
 .active {
     border: 1px solid rgba(254, 209, 0, 1) !important;
 }
-.cars li {
+.cars nav li {
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
     padding: 13px 50px;
     border: 1px solid rgba(235, 235, 235, 1);
+}
+.slider {
+    display: flex;
+}
+.slide {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.slide_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 38px;
+}
+.slide_text ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    padding-bottom: 34px;
+    padding-left: 20px;
+    list-style-image: url(IMG/icon/check.svg);
+}
+.slide_text li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 15px;
+}
+.slide>button, .slider_navigate {
+    display: none;
+}
+.slide button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 13px 80px;
+    background-color: rgba(254, 209, 0, 1);
+}
+.arrow {
+    margin-top: -150px;
+    width: 16px;
+}
+.slide>h3 {
+    display: none;
 }
 
 @media screen and (max-width: 1439px) {
@@ -363,6 +412,83 @@ main .content>img {
         font-size: 28px;
         line-height: 34px;
     }
+    .cars {
+        padding-bottom: 90px;
+    }
+    .cars_title {
+        padding-bottom: 20px;
+    }
+    .cars nav li {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0;
+        border: none;
+    }
+    .cars ul {
+        margin-top: 46px;
+        margin-bottom: 82px;
+        column-gap: 75px;
+    }
+    .active {
+        border: none !important;
+        border-bottom: 1px solid rgba(254, 209, 0, 1) !important;
+    }
+    .arrow {
+        display: none;
+    }
+    .slide_text {
+        display: none;
+    }
+    .slide img {
+        width: 518px;
+        height: 366px;
+        padding-bottom: 12px;
+    }
+    .slide {
+        display: block;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    .slide>button, .slider_navigate {
+        display: block;
+    }
+    .slide_title2 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .slider_navigate {
+        padding: 25px 0;
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    .current {
+        outline: 2px solid rgba(254, 209, 0, 1);
+        outline-offset: 5px;
+    }
+    .slide_btn {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        background-color: rgba(51, 51, 51, 1);
+    }
+    .slide>button {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 22px 0;
+        text-align: center;
+        width: 360px;
+        margin: 0 auto;
+    }
+    .cars {
+        padding-top: 85px;
+    }
+    .slide>h3 {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -447,6 +573,10 @@ main .content>img {
     }
     .process .container {
         margin: 0 20px;
+        padding: 0;
+    }
+    .stages {
+        padding-bottom: 64px;
     }
     .price_title {
         font-size: 20px;
@@ -484,5 +614,49 @@ main .content>img {
     }
     .price_list {
         padding-bottom: 30px;
+    }
+    .cars {
+        padding-top: 30px;
+    }
+    .cars_title {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 5px;
+    }
+    .cars_subtitle {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .cars ul {
+        margin-top: 12px;
+        margin-bottom: 44px;
+        column-gap: 35px;
+    }
+    .slide img {
+        width: 321px;
+        height: 227px;
+        padding-bottom: 8px;
+    }
+    .slide_title2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .slider_navigate {
+        padding: 16px 0 25px 0;
+        column-gap: 15px;
+    }
+    .slide_btn {
+        width: 8px;
+        height: 8px;
+    }
+    .slide>button {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 18px 0;
+        width: 300px;
+    }
+    .cars nav li {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
