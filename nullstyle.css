@@ -12,7 +12,11 @@ a {
 }
 button {
   border: none;
+  cursor: pointer;
 }
 img {
   overflow: hidden;
+}
+input, select {
+  outline: none;
 }
