@@ -58,8 +58,10 @@ header nav {
 }
 .black {
   background-color: black;
-  color: white !important;
   padding: 20px 0 20px 38px !important;
+}
+.black a {
+  color: white !important;
 }
 .menu li {
   padding: 20px 0 20px 38px;

@@ -53,10 +53,16 @@ burger.onclick = () => {
     }
 }
 
+menuBack.addEventListener('click', function () {
+    pos = false;
+    burger.src = 'img/icon/menuBurger.svg';
+    document.body.style.overflow = 'visible';
+    menuBack.style.display = 'none';
+});
+
 // Burger
 
 // Slider
-
 
 let left = document.querySelectorAll('.arrow')[0];
 let right = document.querySelectorAll('.arrow')[1];
