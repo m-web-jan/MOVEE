@@ -14,15 +14,29 @@
     />
   </head>
   <body>
-    <header>
+    <div class="menu_back">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li class="black">Главная</li>
+            <li>Цена</li>
+            <li>Автопарк</li>
+            <li>Отзывы</li>
+            <li>Контакты</li>
+          </ul>
+          <p>8(029)-999-12-13</p>
+        </nav>
+      </div>
+    </div>
+    <header id="main">
       <div class="container">
         <nav>
-          <p class="logo"><a href="#">MOVING</a></p>
+          <p class="logo"><a href="#main">MOVING</a></p>
           <ul>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">Автопарк</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#cars">Автопарк</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
           <p class="phone">
             <a href="tel:8(029)-999-12-13">8(029)-999-12-13</a>
@@ -116,7 +130,7 @@
       </div>
     </section>
 
-    <section class="price_list">
+    <section class="price_list" id="price">
       <div class="container">
         <h2 class="price_title">Цены</h2>
         <h3 class="price_subtitle">
@@ -158,7 +172,7 @@
       </div>
     </section>
 
-    <section class="cars">
+    <section class="cars" id="cars">
       <div class="container">
         <h2 class="cars_title">Автопарк</h2>
         <h3 class="cars_subtitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
@@ -171,32 +185,63 @@
         </nav>
         <div class="slider">
           <img src="IMG/icon/arrow-left.svg" alt="arrow" class="arrow" />
-          <div class="slide">
-            <div class="slide_text">
-              <h3 class="slide_title">Газель 3 метра</h3>
-              <ol>
-                <li>Ширина 2 м</li>
-                <li>Высота 2 м</li>
-                <li>Объем 16 м³</li>
-                <li>Грузоподъемность 1,5 т</li>
-              </ol>
-              <button>Заказать</button>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide_text">
+                <h3 class="slide_title">Газель 3 метра</h3>
+                <ol>
+                  <li>Ширина 2 м</li>
+                  <li>Высота 2 м</li>
+                  <li>Объем 16 м³</li>
+                  <li>Грузоподъемность 1,5 т</li>
+                </ol>
+                <button>Заказать</button>
+              </div>
+              <img src="IMG/slide-one.png" alt="slide-img" />
+              <h3 class="slide_title2">Газель 3 метра / 1,5 тонны</h3>
             </div>
-            <img src="IMG/slide-one.png" alt="slide-img" />
-            <h3 class="slide_title2">Газель 3 метра / 1,5 тонны</h3>
-            <div class="slider_navigate">
-              <div class="slide_btn current"></div>
-              <div class="slide_btn"></div>
-              <div class="slide_btn"></div>
+            <div class="slide">
+              <div class="slide_text">
+                <h3 class="slide_title">Каблук 2 метра </h3>
+                <ol>
+                  <li>Ширина 1.8 м</li>
+                  <li>Высота 1.2 м</li>
+                  <li>Объем 8 м³</li>
+                  <li>Грузоподъемность 0.8 т</li>
+                </ol>
+                <button>Заказать</button>
+              </div>
+              <img src="IMG/slide-two.png" alt="slide-img" />
+              <h3 class="slide_title2">Каблук 2 метра / 0.8 тонны</h3>
             </div>
-            <button>Заказать</button>
+            <div class="slide">
+              <div class="slide_text">
+                <h3 class="slide_title">Грузовик 3 метра</h3>
+                <ol>
+                  <li>Ширина 3 м</li>
+                  <li>Высота 3 м</li>
+                  <li>Объем 20 м³</li>
+                  <li>Грузоподъемность 2 т</li>
+                </ol>
+                <button>Заказать</button>
+              </div>
+              <img src="IMG/slide-three.png" alt="slide-img" />
+              <h3 class="slide_title2">Грузовик 3 метра / 2 тонны</h3>
+            </div>
           </div>
+          <div class="slider_navigate">
+            <div class="slide_btn current"></div>
+            <div class="slide_btn"></div>
+            <div class="slide_btn"></div>
+          </div>
+          <button>Заказать</button>
+
           <img src="IMG/icon/arrow-right.svg" alt="arrow" class="arrow" />
         </div>
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews_title">Отзывы</h2>
         <div class="all_reviews">
@@ -267,103 +312,202 @@
           </div>
         </div>
         <div class="slider_navigate">
-            <div class="slide_btn current"></div>
-            <div class="slide_btn"></div>
-            <div class="slide_btn"></div>
-          </div>
+          <div class="slide_btn current"></div>
+          <div class="slide_btn"></div>
+          <div class="slide_btn"></div>
+        </div>
         <button>Все отзывы</button>
       </div>
     </section>
 
     <section class="order">
-        <div class="container">
-            <form action="#" method="get">
-                <h2 class="form_title">Закажи  переезд прямо сейчас со скидкой %</h2>
-                <p class="form_subtitle">Мы перезвоним в течении 10 секунд</p>
-                <div class="inputs">
-                    <input tabindex="1" type="text" name="username" placeholder="Ваше имя">
-                    <input tabindex="2" type="tel" name="" placeholder="Телефон">
-                    <h3 class="input_title">Укажите область</h3>
-                    <h3 class="input_title">Укажите город</h3>
-                    <select tabindex="3" name="region">
-                        <option value="">Например: Минская</option>
-                        <option value="brest">Брестская</option>
-                        <option value="vitebsk">Витебская</option>
-                        <option value="gomel">Гомельская</option>
-                        <option value="grodno">Гродненская</option>
-                        <option value="minsk">Минская</option>
-                        <option value="mogilev">Могилевская</option>
-                    </select>
-                    <select tabindex="4" name="city">
-                        <option value="">Например: Минская</option>
-                        <option value="brest">Брест</option>
-                        <option value="vitebsk">Витебск</option>
-                        <option value="gomel">Гомель</option>
-                        <option value="grodno">Гродно</option>
-                        <option value="minsk">Минск</option>
-                        <option value="mogilev">Могилев</option>
-                    </select>
-                </div>
-                <div class="payment_method">
-                    <h3>Способ оплаты</h3>
-                    <div class="methods">
-                        <div class="radio">
-                            <input tabindex="5" type="radio" name="paymentMethod" id="method1">
-                            <label for="method1">Наличными курьеру</label>
-                        </div>
-                        <div class="radio">
-                            <input tabindex="5" type="radio" name="paymentMethod" id="method2">
-                            <label for="method2">Картой курьеру</label>
-                        </div>
-                        <div class="radio">
-                            <input tabindex="5" type="radio" name="paymentMethod" id="method3">
-                            <label for="method3">Банковский перевод</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="additional">
-                    <h3>Дополнительные услуги</h3>
-                    <img src="IMG/icon/arrow-up.svg" alt="arrow">
-                    <div class="services">
-                        <div class="checkbox">
-                            <input tabindex="6" type="checkbox" name="additionalService" id="service1">
-                            <label for="service1">Вызов замерщика</label>
-                        </div>
-                        <div class="checkbox">
-                            <input tabindex="7" type="checkbox" name="additionalService" id="service2">
-                            <label for="service2">Упаковка для хрупких предметов</label>
-                        </div>
-                        <div class="checkbox">
-                            <input tabindex="8" type="checkbox" name="additionalService" id="service3">
-                            <label for="service3">Кран</label>
-                        </div>
-                        <div class="checkbox">
-                            <input tabindex="9" type="checkbox" name="additionalService" id="service4">
-                            <label for="service4">Сборка мебели</label>
-                        </div>
-                        <div class="checkbox">
-                            <input tabindex="10" type="checkbox" name="additionalService" id="service5">
-                            <label for="service5">Крупногабаритные предметы</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form_footer">
-                    <h3 class="timer">05:37:25</h3>
-                    <div class="submit">
-                        <div class="form_btn">
-                            <div class="border"></div>
-                            <div class="button">Заказать</div>
-                        </div>
+      <div class="container">
+        <form action="#" method="get">
+          <h2 class="form_title">Закажи переезд прямо сейчас со скидкой %</h2>
+          <p class="form_subtitle">Мы перезвоним в течении 10 секунд</p>
+          <div class="inputs">
+            <input
+              tabindex="1"
+              type="text"
+              name="username"
+              placeholder="Ваше имя"
+            />
+            <input tabindex="2" type="tel" name="" placeholder="Телефон" />
+            <h3 class="input_title">Укажите область</h3>
+            <h3 class="input_title">Укажите город</h3>
+            <select tabindex="3" name="region">
+              <option value="">Например: Минская</option>
+              <option value="brest">Брестская</option>
+              <option value="vitebsk">Витебская</option>
+              <option value="gomel">Гомельская</option>
+              <option value="grodno">Гродненская</option>
+              <option value="minsk">Минская</option>
+              <option value="mogilev">Могилевская</option>
+            </select>
+            <select tabindex="4" name="city">
+              <option value="">Например: Минская</option>
+              <option value="brest">Брест</option>
+              <option value="vitebsk">Витебск</option>
+              <option value="gomel">Гомель</option>
+              <option value="grodno">Гродно</option>
+              <option value="minsk">Минск</option>
+              <option value="mogilev">Могилев</option>
+            </select>
+          </div>
+          <div class="payment_method">
+            <h3>Способ оплаты</h3>
+            <div class="methods">
+              <div class="radio">
+                <input
+                  tabindex="5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="method1"
+                />
+                <label for="method1">Наличными курьеру</label>
+              </div>
+              <div class="radio">
+                <input
+                  tabindex="5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="method2"
+                />
+                <label for="method2">Картой курьеру</label>
+              </div>
+              <div class="radio">
+                <input
+                  tabindex="5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="method3"
+                />
+                <label for="method3">Банковский перевод</label>
+              </div>
+            </div>
+          </div>
+          <div class="additional">
+            <h3>Дополнительные услуги</h3>
+            <img src="IMG/icon/arrow-up.svg" alt="arrow" />
+            <div class="services">
+              <div class="checkbox">
+                <input
+                  tabindex="6"
+                  type="checkbox"
+                  name="additionalService"
+                  id="service1"
+                />
+                <label for="service1">Вызов замерщика</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  tabindex="7"
+                  type="checkbox"
+                  name="additionalService"
+                  id="service2"
+                />
+                <label for="service2">Упаковка для хрупких предметов</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  tabindex="8"
+                  type="checkbox"
+                  name="additionalService"
+                  id="service3"
+                />
+                <label for="service3">Кран</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  tabindex="9"
+                  type="checkbox"
+                  name="additionalService"
+                  id="service4"
+                />
+                <label for="service4">Сборка мебели</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  tabindex="10"
+                  type="checkbox"
+                  name="additionalService"
+                  id="service5"
+                />
+                <label for="service5">Крупногабаритные предметы</label>
+              </div>
+            </div>
+          </div>
+          <div class="form_footer">
+            <h3 class="timer">05:37:25</h3>
+            <div class="submit">
+              <div class="form_btn">
+                <div class="border"></div>
+                <div class="button">Заказать</div>
+              </div>
 
-                        <div class="politica">
-                            <input tabindex="11" type="checkbox" name="personalData" id="personaldata">
-                            <label for="personaldata">Даю согласие на обработку данных</label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-        </div>
+              <div class="politica">
+                <input
+                  tabindex="11"
+                  type="checkbox"
+                  name="personalData"
+                  id="personaldata"
+                />
+                <label for="personaldata"
+                  >Даю согласие на обработку данных</label
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
+
+    <section class="map" id="contact">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.3789169968736!2d23.694214076384977!3d52.09103516790054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2z0YPQuy4g0JHRg9C00ZHQvdC90L7Qs9C-IDY0LCDQkdGA0LXRgdGCLCDQkdGA0LXRgdGC0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1703863294468!5m2!1sru!2sby"
+        width="100%"
+        height="666"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="container">
+        <h3>Брест</h3>
+        <h2>8 (029)-999-12-13</h2>
+        <h2>hello@movee.ru</h2>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="privacy">
+          <h2>MOVING</h2>
+          <p>Политика<br>конфиденциальнности</p>
+          <p>Соглашение на обработку<br>персональных данных</p>
+        </div>
+        <nav>
+          <ul>
+            <a href="#main"><li>Главная</li></a>
+            <a href="#price"><li>Цена</li></a>
+            <a href="#cars"><li>Автопарк</li></a>
+            <a href="#reviews"><li>Отзывы</li></a>
+            <a href="#contact"><li>Контакты</li></a>
+          </ul>
+        </nav>
+        <div class="callback">
+          <button>Обратный звонок</button>
+          <p>8 (029)-999-12-13</p>
+          <div class="social_icons">
+            <img src="IMG/icon/youtube.svg" alt="youtube">
+            <img src="IMG/icon/vk.svg" alt="vk">
+            <img src="IMG/icon/facebook.svg" alt="facebook">
+            <img src="IMG/icon/instagram.svg" alt="instagram">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
